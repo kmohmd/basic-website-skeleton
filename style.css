@@ -1,0 +1,94 @@
+
+html, body{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Avenir', 'Segoe-UI', sans-serif;
+}
+
+nav {
+    position: fixed; /* position is fixed to the view */
+    width: 100vw; /* width set to 100% of the view width */
+    height: 60px;
+    background: dimgray;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+nav ul li a:hover{
+    color: #ffcc6c;
+}
+
+main {
+    min-height: 100vh; /* minimum height set to 100% of the view height */
+    padding-top: 60px; /* add a padding at the top so that content is moved from under the nav to be visible */
+
+    width: 100%;
+    max-width: 1040px; /* maximum width the element can grow to */
+
+    margin: 0 auto; /* first value is top and bottom, second value is left and right. L & R set to auto to center */
+}
+
+main h3{
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+main h5{
+    font-size: 28px;
+    margin: 0;
+}
+
+main p{
+    font-size: 14px;
+}
+
+main img{
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.col{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.col:not(:last-child):not(:only-child){
+    margin-right: 5px;
+}
+
+footer {
+    width: 100vw;
+    height: 80px;
+    background: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
